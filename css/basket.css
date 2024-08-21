@@ -1,0 +1,341 @@
+* {
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: green 1px dashed;*/
+}
+html {
+    max-width: 1536px;
+    background: #F7F7F7;
+}
+.head_links {
+    width: 1536px;
+    height: 48px;
+    background: rgb(247, 235, 229);
+    display: flex;
+}
+.head_links a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.79);
+}
+.frame_box {
+    position: relative;
+    width: 465px;
+    height: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    gap: 15px;
+    margin: 15px 0 0 200px;
+}
+.frame_block {
+    position: absolute;
+    width: 629px;
+    height: 24px;
+    left: 700px;
+    top: 12px;
+    display: flex;
+    gap: 10px;
+}
+.piter{
+    position: static;
+    width: 143px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Num {
+    position: static;
+    width: 132px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.basket {
+    position: static;
+    width: 162px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.link_vek {
+    position: static;
+    width: 92px;
+    height: 24px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0 30px;
+}
+.menu {
+    width: 1536px;
+    height: 160px;
+    display: flex;
+}
+.submenu-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: 100ms;
+}
+.submenu-item:hover {
+    transition: 100ms;
+    background: #EBEDEE;
+}
+.sum_menu:hover .submenu {
+    display: block;
+}
+.menu_box {
+    position: absolute;
+    width: 468px;
+    height: 24px;
+    left: 220px;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+.menu_block {
+    position: absolute;
+    width: 399px;
+    height: 17px;
+    left: 880px;
+    top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+li {
+    list-style: none;
+}
+.logo_mocoron {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    left: 700px;
+    top: 70px;
+    cursor: pointer;
+}
+.sum_menu {
+    cursor: pointer;
+    height: 35px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+.img_jo {
+    position: absolute;
+    width: 1536px;
+    height: 550px;
+    left: 0;
+    top: 200px;
+}
+.footer {
+    width: 1530px;
+    height: 430px;
+}
+.footer {
+    background: #EBEDEE;
+}
+.footer_box {
+    width: 1200px;
+    height: 300px;
+    margin: 0 160px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+.footer_icon_block {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+.footer_icon_box {
+    display: flex;
+}
+.footer_span {
+    color: gray;
+    font-size: 14px;
+}
+.footer_icon_title {
+    font-size: 14px;
+}
+.footer_info {
+    margin-right: 25px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_info_a {
+    text-decoration: none;
+    color: black;
+    padding-top: 14px;
+    transition: 200ms;
+}
+.footer_info_a:hover {
+    border-bottom: #EE5D7C 2px solid;
+    transition: 200ms;
+}
+.footer_catolog {
+    display: flex;
+    flex-direction: column;
+}
+.footer_corp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+.footer_number {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+.footer_apps {
+    display: flex;
+    gap: 10px;
+}
+.footer_app {
+    border-radius: 100%;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_app img {
+    width: 24px;
+    height: 24px;
+}
+.love_box {
+    margin-left: 200px;
+    border: rgba(192, 192, 192, 0.2) 0.5px solid;
+    border-radius: 5px;
+}
+.basket_title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+.shop_block {
+    display: flex;
+    align-items: center;
+    border: rgba(192, 192, 192, 0.2) 0.5px solid;
+    padding: 10px;
+    width: 670px;
+}
+.shop_img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.shop_controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #F7F7F7;
+}
+.shop_controls button {
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    background: #F7F7F7;
+    border-radius: 2px;
+    border: rgba(192, 192, 192, 0.68) 1px solid;
+}
+.shop_controls button:hover{
+    background: #EBEDEE;
+}
+.remove_button {
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+.shop_price {
+     color: #EE5D7C;
+     font-weight: 600;
+}
+.price_box {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    height: 200px;
+    border: rgba(192, 192, 192, 0.2) 1px solid;
+    width: 476px;
+    padding: 20px;
+}
+.total_price {
+    color: #EE5D7C;
+    margin-bottom: 15px;
+}
+.correct {
+    margin-bottom: 30px;
+}
+.basket_boxes {
+    display: flex;
+    gap: 50px;
+}
+.forms {
+    width: 230px;
+    height: 48px;
+    background: #EE5D7C;
+    border: 1px solid #EE5D7C;
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+.forms:hover {
+    transition: 200ms;
+    background: rgba(238, 93, 124, 0.85);
+    border: 1px solid #EE5D7C;
+}

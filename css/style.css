@@ -1,0 +1,686 @@
+* {
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: green 1px dashed;*/
+}
+html {
+    max-width: 1536px;
+    background: #F7F7F7;
+}
+.head_links {
+    position: absolute;
+    width: 1536px;
+    height: 48px;
+    left: 0;
+    background: rgb(247, 235, 229);
+    display: flex;
+}
+.head_links a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.79);
+}
+.frame_box {
+    position: relative;
+    width: 465px;
+    height: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    gap: 15px;
+    margin: 15px 0 0 200px;
+}
+.frame_block {
+    position: absolute;
+    width: 629px;
+    height: 24px;
+    left: 700px;
+    top: 12px;
+    display: flex;
+    gap: 10px;
+}
+.piter{
+    position: static;
+    width: 143px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Num {
+    position: static;
+    width: 132px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.basket {
+    position: static;
+    width: 162px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.link_vek {
+    position: static;
+    width: 92px;
+    height: 24px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0 30px;
+}
+.menu {
+    position: absolute;
+    width: 1536px;
+    height: 160px;
+    left: 0;
+    top: 47px;
+    display: flex;
+}
+.submenu-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+.sum_menu:hover .submenu {
+    display: block;
+}
+.menu_box {
+    position: absolute;
+    width: 468px;
+    height: 24px;
+    left: 220px;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+.menu_block {
+    position: absolute;
+    width: 399px;
+    height: 17px;
+    left: 880px;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+li {
+    list-style: none;
+}
+.logo_mocoron {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+    left: 700px;
+    top: 20px;
+}
+.sum_menu {
+    cursor: pointer;
+    height: 35px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+.img_jo {
+    position: absolute;
+    width: 1536px;
+    height: 550px;
+    left: 0;
+    top: 200px;
+}
+.ready_set1 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 200px;
+    top: 779px;
+    background-image: url("/img/Group 188.png");
+}
+.ready_set2 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 800px;
+    top: 779px;
+    background-image: url("/img/Group 189.png");
+}
+.ready_set3 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 200px;
+    top: 1064px;
+    background-image: url("/img/Group 190.png");
+}
+.ready_set4 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 800px;
+    top: 1064px;
+    background-image: url("/img/Group 191.png");
+}
+.ready_set5 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 200px;
+    top: 1350px;
+    background-image: url("/img/Group 192.png");
+}
+.ready_set6 {
+    position: absolute;
+    width: 570px;
+    height: 260px;
+    left: 800px;
+    top: 1350px;
+    background-image: url("/img/Group 193.png");
+}
+.card_icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 235px;
+    top: 36px;
+}
+.card_title {
+    color: rgb(41, 41, 41);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 156px;
+}
+.card_span {
+    color: rgb(41, 41, 41);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+    height: 35px;
+}
+.action {
+    width: 1200px;
+    height: 615px;
+    position: absolute;
+    top: 1700px;
+    left: 190px;
+}
+.action_block {
+    width: 1175px;
+    height: 480px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+
+}
+.action h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.action_img {
+    width: 270px;
+    height: 360px;
+}
+.action_h3 {
+    margin-bottom: 3px;
+    text-align: center;
+}
+.action_p {
+    font-size: 20px;
+    color: #EE5D7C;
+    text-align: center;
+
+}
+.holly {
+    position: absolute;
+    top: 2400px;
+    left: 190px;
+    width: 1200px;
+}
+.holly_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 148px;
+}
+.holly_h2 {
+    text-align: center;
+    font-size: 35px;
+
+}
+.holly_block {
+    text-align: center;
+    margin-top: 40px;
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+    font-weight: 550;
+}
+.holly_line {
+    position: absolute;
+
+}
+.holly_box::before {
+    content: '------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------';
+    position: absolute;
+    font-size: 21px;
+    z-index: 0;
+    color: silver;
+}
+.holly_block1 {
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    font-weight: 600;
+    transition: 500ms;
+    text-align: center;
+}
+.holly_block1 img {
+    margin-left: 30px;
+}
+.holly_block:hover {
+    transition: 500ms;
+    transform: scale(105%);
+    color: #EE5D7C;
+    font-weight: 600;
+}
+.holly_block1:hover {
+    transition: 500ms;
+    transform: scale(105%);
+    color: #EE5D7C;
+    font-weight: 600;
+}
+.shop {
+    position: absolute;
+    top: 2700px;
+    left: 190px;
+    width: 1205px;
+    text-align: center;
+}
+.shop_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.shop_block {
+    transition: 400ms;
+    width: 370px;
+    height: 459px;
+    text-align: start;
+    background: white;
+    border: silver 0.5px solid;
+    overflow: hidden;
+}
+.shop_block:hover .shop_img1 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_block:hover .shop_img2 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_block:hover .shop_img3 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_block:hover .shop_img4 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_block:hover .shop_img5 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_block:hover .shop_img6 {
+    transition: 400ms;
+    scale: 110%;
+}
+.shop_img1 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2024/04/sladkie-podarki-2.png);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_img2 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2023/04/macaron-s-eklerami.png);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_img3 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2022/11/podarok-na-den-rogdeniya-2.png);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_img4 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2023/03/detskiy.jpg);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_img5 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2022/10/podarki-na-den-rogdeniya-1.png);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_img6 {
+    background-image: url(https://macaronshop.ru/wp-content/uploads/2023/04/macaron-s-eklerami-5.png);
+    width: 375px;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    transition: 400ms;
+}
+.shop_kit {
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid silver;
+    margin-top: 40px;
+}
+.shop_price {
+    font-size: 20px;
+    padding: 10px 0 0 20px;
+    color: #EE5D7C;
+}
+.shop_buy {
+    border: none;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-left: solid 1px silver;
+    transition: 200ms;
+}
+.shop_h3 {
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+}
+.shop_span {
+    margin-left: 20px;
+    color: silver;
+
+}
+.shop_buy:hover {
+    transition: 300ms;
+    color: #EE5D7C;
+}
+.catalog {
+    margin-top: 20px;
+    color: #4a5f6d;
+    transition: 300ms;
+    padding: 14px 18px;
+    width: 230px;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 17px;
+    font-weight: 600;
+}
+.catalog:hover {
+    color: white;
+    transition: 300ms;
+    background: #0693e3;
+}
+.news {
+    position: absolute;
+    top: 3800px;
+    width: 1200px;
+    left: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news_box {
+    width: 1176px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.news_block {
+    width: 370px;
+}
+.news_pad {
+    padding: 20px;
+    background: white;
+}
+.news_img1 {
+    width: 370px;
+    height: 210px;
+    overflow: hidden;
+    background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/podarok-rukovoditelyu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.news_img2 {
+    width: 370px;
+    height: 210px;
+    overflow: hidden;
+    background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/podarok-na-svadbu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.news_img3 {
+    width: 370px;
+    height: 210px;
+    overflow: hidden;
+    background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/den-rozhdeniya.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.news_title {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.news_h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 550;
+    margin-bottom: 50px;
+}
+.news_text {
+    color: gray;
+
+}
+.news_data {
+    color: gray;
+}
+.news_btn {
+    width: 230px;
+    height: 51px;
+    background: none;
+    border: #0693e3 solid 1px;
+    font-size: 17px;
+    margin-top: 70px;
+    transition: 400ms;
+}
+.news_btn:hover {
+    transition: 400ms;
+    background: #0693e3;
+    color: white;
+}
+.vito {
+    position: absolute;
+    top: 4700px;
+    width: 1520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vito_h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.vito_box {
+    width: 1200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.vito_block {
+    width: 280px;
+    text-align: center;
+}
+.vito_img {
+    width: 280px;
+    height: 280px;
+}
+.vito_h3 {
+    margin: 10px 0;
+}
+.vito_p {
+    letter-spacing: 0;
+}
+.footer {
+    width: 1530px;
+    position: absolute;
+    height: 430px;
+    top: 5250px;
+}
+.footer {
+    background: #EBEDEE;
+}
+.footer_box {
+    width: 1200px;
+    height: 300px;
+    margin: 0 160px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+.footer_icon_block {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+.footer_icon_box {
+    display: flex;
+}
+.footer_span {
+    color: gray;
+    font-size: 14px;
+}
+.footer_icon_title {
+    font-size: 14px;
+}
+.footer_info {
+    margin-right: 25px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_info_a {
+    text-decoration: none;
+    color: black;
+    padding-top: 14px;
+    transition: 200ms;
+}
+.footer_info_a:hover {
+    border-bottom: #EE5D7C 2px solid;
+    transition: 200ms;
+}
+.footer_catolog {
+    display: flex;
+    flex-direction: column;
+}
+.footer_corp {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+.footer_number {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+.footer_apps {
+    display: flex;
+    gap: 10px;
+}
+.footer_app {
+    border-radius: 100%;
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_app img {
+    width: 24px;
+    height: 24px;
+}

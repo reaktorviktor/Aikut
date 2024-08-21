@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Набор с зефиром \"Восторг\"",
+    "img": "url(https://macaronshop.ru/wp-content/uploads/2024/04/sladkie-podarki-2.png)",
+    "price": "790 руб"
+  },
+  {
+    "name":"Набор с эклерами \"Услада\"",
+    "img":"https://macaronshop.ru/wp-content/uploads/2023/04/macaron-s-eklerami.png",
+    "price":"960 руб"
+  },
+  {
+    "name":"Набор-комбо ко Дню Строителя",
+    "img":"https://macaronshop.ru/wp-content/uploads/2022/11/podarok-na-den-rogdeniya-2.png",
+    "price":"690 руб"
+  },
+  {
+    "name":"Детский набор макарон",
+    "img":"https://macaronshop.ru/wp-content/uploads/2023/03/detskiy.jpg",
+    "price":"1190 руб"
+  },
+  {
+    "name":"Подарок на день рождения",
+    "img":"https://macaronshop.ru/wp-content/uploads/2022/10/podarki-na-den-rogdeniya-1.png",
+    "price":"1190 руб"
+  },
+  {
+    "name":"Набор с эклерами \"Изюминка\"",
+    "img":"https://macaronshop.ru/wp-content/uploads/2023/04/macaron-s-eklerami-5.png",
+    "price":"960 руб"
+  }
+]
