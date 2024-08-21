@@ -172,7 +172,7 @@ li {
     height: 260px;
     left: 200px;
     top: 779px;
-    background-image: url("/img/Group 188.png");
+    background-image: url("../img/Group 188.png");
 }
 .ready_set2 {
     position: absolute;
@@ -180,7 +180,7 @@ li {
     height: 260px;
     left: 800px;
     top: 779px;
-    background-image: url("/img/Group 189.png");
+    background-image: url("../img/Group 189.png");
 }
 .ready_set3 {
     position: absolute;
