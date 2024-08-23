@@ -208,28 +208,31 @@ li {
 }
 .footer_info {
     margin-right: 25px;
-    width: 170px;
     display: flex;
     flex-direction: column;
+    transition: 200ms;
+    gap: 10px;
 }
 .footer_info_a {
     text-decoration: none;
     color: black;
-    padding-top: 14px;
+    border-bottom: rgba(0, 0, 0, 0) solid 2px;
     transition: 200ms;
 }
 .footer_info_a:hover {
-    border-bottom: #EE5D7C 2px solid;
+    border-bottom: #EE5D7C solid 1.6px;
     transition: 200ms;
 }
 .footer_catolog {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .footer_corp {
     display: flex;
     flex-direction: column;
     margin-left: 35px;
+    gap: 10px;
 }
 .footer_number {
     margin-left: 40px;
@@ -313,6 +316,9 @@ li {
     border: rgba(192, 192, 192, 0.2) 1px solid;
     width: 476px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .total_price {
     color: #EE5D7C;

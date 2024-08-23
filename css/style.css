@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     /*border: green 1px dashed;*/
+    text-decoration: none;
 }
 html {
     max-width: 1536px;
@@ -102,9 +103,17 @@ html {
     top: 47px;
     display: flex;
 }
+.menu a {
+    color: black;
+}
 .submenu-item {
     padding: 10px 20px;
     white-space: nowrap;
+    transition: 200ms;
+}
+.submenu-item:hover {
+    transition: 200ms;
+    background: #EBEDEE;
 }
 .sum_menu:hover .submenu {
     display: block;
@@ -120,7 +129,6 @@ html {
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-
 }
 .menu_block {
     position: absolute;
@@ -252,8 +260,11 @@ li {
     display: flex;
     gap: 30px;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-
+    cursor: grab;
+    user-select: none;
+}
+.action_set {
+    scroll-snap-align: start;
 }
 .action h2 {
     text-align: center;
@@ -263,6 +274,7 @@ li {
 .action_img {
     width: 270px;
     height: 360px;
+    pointer-events: none;
 }
 .action_h3 {
     margin-bottom: 3px;
@@ -437,7 +449,7 @@ li {
     display: flex;
     justify-content: space-between;
     border-top:1px solid silver;
-    margin-top: 40px;
+    margin-top: 47px;
 }
 .shop_price {
     font-size: 20px;
@@ -501,6 +513,7 @@ li {
 }
 .news_block {
     width: 370px;
+    overflow: hidden;
 }
 .news_pad {
     padding: 20px;
@@ -513,6 +526,7 @@ li {
     background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/podarok-rukovoditelyu.jpg");
     background-size: cover;
     background-position: center;
+    transition: 400ms;
 }
 .news_img2 {
     width: 370px;
@@ -521,6 +535,7 @@ li {
     background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/podarok-na-svadbu.jpg");
     background-size: cover;
     background-position: center;
+    transition: 400ms;
 }
 .news_img3 {
     width: 370px;
@@ -529,6 +544,19 @@ li {
     background-image: url("https://macaronshop.ru/wp-content/uploads/2024/06/den-rozhdeniya.jpg");
     background-size: cover;
     background-position: center;
+    transition: 400ms;
+}
+.news_img1:hover {
+    transition: 400ms;
+    scale: 110%;
+}
+.news_img2:hover {
+    transition: 400ms;
+    scale: 110%;
+}
+.news_img3:hover {
+    transition: 400ms;
+    scale: 110%;
 }
 .news_title {
     font-size: 23px;
@@ -637,28 +665,31 @@ li {
 }
 .footer_info {
     margin-right: 25px;
-    width: 170px;
     display: flex;
     flex-direction: column;
+    transition: 200ms;
+    gap: 10px;
 }
 .footer_info_a {
     text-decoration: none;
     color: black;
-    padding-top: 14px;
+    border-bottom: rgba(0, 0, 0, 0) solid 2px;
     transition: 200ms;
 }
 .footer_info_a:hover {
-    border-bottom: #EE5D7C 2px solid;
+    border-bottom: #EE5D7C solid 1.6px;
     transition: 200ms;
 }
 .footer_catolog {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .footer_corp {
     display: flex;
     flex-direction: column;
     margin-left: 35px;
+    gap: 10px;
 }
 .footer_number {
     margin-left: 40px;
@@ -683,4 +714,9 @@ li {
 .footer_app img {
     width: 24px;
     height: 24px;
+}
+.block {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }

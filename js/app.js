@@ -31,12 +31,27 @@ const products = [
     }
 ];
 
+// Функция для обновления кнопки на ссылку
+function updateButtonToLink(button) {
+    button.disabled = true;
+    button.innerHTML = '<a style="text-decoration: none; pointer-events: auto; color: #2efc00" href="http://localhost:63342/Macorons%20shop/page/basket.html">&#9989; В корзину</a>';
+    button.style.pointerEvents = 'none'; // Делаем кнопку неактивной
+}
+
 // Сохраняем товары в localStorage при клике на "Купить"
 products.forEach((product, index) => {
     const button = document.querySelectorAll('.shop_buy')[index];
+
+    // Проверяем, есть ли товар уже в корзине при загрузке страницы, чтобы сразу заменить кнопку
+    let savedProducts = JSON.parse(localStorage.getItem('love_products')) || [];
+    const existingProduct = savedProducts.find(item => item.name === product.name);
+    if (existingProduct) {
+        updateButtonToLink(button);
+    }
+
     button.addEventListener('click', () => {
         // Извлекаем существующий список товаров из localStorage или создаем пустой массив
-        const savedProducts = JSON.parse(localStorage.getItem('love_products')) || [];
+        let savedProducts = JSON.parse(localStorage.getItem('love_products')) || [];
 
         // Проверяем, есть ли уже этот товар в корзине
         const existingProductIndex = savedProducts.findIndex(item => item.name === product.name);
@@ -50,5 +65,61 @@ products.forEach((product, index) => {
 
         // Сохраняем обновленный массив в localStorage
         localStorage.setItem('love_products', JSON.stringify(savedProducts));
+
+        // Заменяем кнопку на ссылку "В корзину"
+        updateButtonToLink(button);
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    let blocks = document.querySelectorAll('.block');
+
+    function checkBlocksVisibility() {
+        let windowHeight = window.innerHeight;
+
+        blocks.forEach(block => {
+            let blockPosition = block.getBoundingClientRect().top;
+
+            if (blockPosition < windowHeight - 100) {
+                block.style.opacity = "1";
+                block.style.transform = "translateY(0)";
+            }
+        });
+    }
+
+    checkBlocksVisibility();
+
+    window.addEventListener('scroll', function() {
+        checkBlocksVisibility();
+    });
+});
+
+    const actionBlock = document.querySelector('.action_block');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    actionBlock.addEventListener('mousedown', (e) => {
+    isDown = true;
+    actionBlock.classList.add('active');
+    startX = e.pageX - actionBlock.offsetLeft;
+    scrollLeft = actionBlock.scrollLeft;
+});
+
+    actionBlock.addEventListener('mouseleave', () => {
+    isDown = false;
+    actionBlock.classList.remove('active');
+});
+
+    actionBlock.addEventListener('mouseup', () => {
+    isDown = false;
+    actionBlock.classList.remove('active');
+});
+
+    actionBlock.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - actionBlock.offsetLeft;
+    const walk = (x - startX) * 1.2; // Скорость прокрутки
+    actionBlock.scrollLeft = scrollLeft - walk;
 });
