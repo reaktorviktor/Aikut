@@ -34,7 +34,7 @@ const products = [
 // Функция для обновления кнопки на ссылку
 function updateButtonToLink(button) {
     button.disabled = true;
-    button.innerHTML = '<a style="text-decoration: none; pointer-events: auto; color: #2efc00" href="http://localhost:63342/Macorons%20shop/page/basket.html">&#9989; В корзину</a>';
+    button.innerHTML = '<a style="text-decoration: none; pointer-events: auto; color: #2efc00" href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/reaktorviktor/Aikut/main/page/basket.html">&#9989; В корзину</a>';
     button.style.pointerEvents = 'none'; // Делаем кнопку неактивной
 }
 

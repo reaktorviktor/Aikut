@@ -260,7 +260,6 @@ li {
     display: flex;
     gap: 30px;
     overflow: hidden;
-    cursor: grab;
     user-select: none;
 }
 .action_set {
