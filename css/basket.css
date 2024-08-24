@@ -330,6 +330,7 @@ li {
 .basket_boxes {
     display: flex;
     gap: 50px;
+    justify-content: space-around;
 }
 .forms {
     width: 230px;
